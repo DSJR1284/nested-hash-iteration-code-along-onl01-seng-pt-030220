@@ -1,4 +1,4 @@
-# require 'pry'
+require 'pry'
 
   # This is the array we will be passing into the remove_strawberry method
   # contacts = {
@@ -12,14 +12,14 @@
   #     email: "freddy@mercury.com",
   #     favorite_ice_cream_flavors: ["strawberry", "cookie dough", "mint chip"]
   #   }
-  # }
-  require "pry"
+  # 
   
 def remove_strawberry(contacts)
   contacts.each do |person, contacts_details_hash|
     if person == "Freddy Mercury"
       contact_details_hash.each do |attribute, data|
-    binding.pry
+        if attribute == :favorite_ice_cream_flavors
+          binding.pry 
     end
   end 
 end
